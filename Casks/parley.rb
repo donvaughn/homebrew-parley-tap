@@ -8,8 +8,18 @@ cask "parley" do
   desc "Dictation in any app: speak, and cleaned-up text appears at the cursor"
   homepage "https://github.com/donvaughn/homebrew-tap"
 
-  depends_on macos: ">= :tahoe"
+  livecheck do
+    url :url
+    strategy :github_latest do |json|
+      match = json["tag_name"]&.match(/^parley-(\d+(?:\.\d+)+)-(\d+)$/i)
+      next if match.blank?
+
+      "#{match[1]},#{match[2]}"
+    end
+  end
+
   depends_on arch: :arm64
+  depends_on macos: :tahoe
 
   app "Parley.app"
 
