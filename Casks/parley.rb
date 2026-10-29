@@ -1,7 +1,7 @@
 # Written by scripts/publish.sh from packaging/homebrew/parley.rb in Parley's repo: edit it there.
 cask "parley" do
-  version "0.1.0,96"
-  sha256 "911913ed24d55b31a5c1881f450b8bb15cb51e5eca177a3523eb73efcc37e01d"
+  version "0.1.0,97"
+  sha256 "1779e72d961a33b32c35b8a3666afeea8f9f5270d406022bf681623b800f9c25"
 
   url "https://github.com/donvaughn/homebrew-tap/releases/download/parley-#{version.csv.first}-#{version.csv.second}/Parley.dmg"
   name "Parley"
@@ -26,6 +26,7 @@ cask "parley" do
   uninstall quit: "com.donvaughn.parley"
 
   zap trash: [
+    "~/Library/Application Support/FluidAudio/Models/parakeet-ctc-110m-coreml",
     "~/Library/Application Support/Parley",
     "~/Library/Caches/com.donvaughn.parley",
     "~/Library/HTTPStorages/com.donvaughn.parley",
