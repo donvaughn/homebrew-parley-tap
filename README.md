@@ -4,7 +4,7 @@ Parley turns what you say into text in any app on your Mac: double-tap Fn, talk,
 appears at your cursor.
 
 ```sh
-brew install --cask donvaughn/tap/parley
+brew install --cask donvaughn/parley-tap/parley
 ```
 
 Needs a Mac with Apple silicon and macOS 26 or later. Update with `brew upgrade --cask parley`. Remove with

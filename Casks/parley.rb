@@ -3,10 +3,10 @@ cask "parley" do
   version "0.1.0,98"
   sha256 "8fbd6041ce0a3dded3a7cc282c2fcd31d5cb1cf790df04a550f4040f357a71dd"
 
-  url "https://github.com/donvaughn/homebrew-tap/releases/download/parley-#{version.csv.first}-#{version.csv.second}/Parley.dmg"
+  url "https://github.com/donvaughn/homebrew-parley-tap/releases/download/parley-#{version.csv.first}-#{version.csv.second}/Parley.dmg"
   name "Parley"
   desc "Dictation in any app: speak, and cleaned-up text appears at the cursor"
-  homepage "https://github.com/donvaughn/homebrew-tap"
+  homepage "https://github.com/donvaughn/homebrew-parley-tap"
 
   livecheck do
     url :url
