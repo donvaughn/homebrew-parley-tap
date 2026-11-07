@@ -1,7 +1,7 @@
 # Written by scripts/publish.sh from packaging/homebrew/parley.rb in Parley's repo: edit it there.
 cask "parley" do
-  version "0.1.0,98"
-  sha256 "8fbd6041ce0a3dded3a7cc282c2fcd31d5cb1cf790df04a550f4040f357a71dd"
+  version "0.1.0,171"
+  sha256 "a9316feb258b08a5b994694e94959d386b9d9b2bc505017c015d32f49b62b9b1"
 
   url "https://github.com/donvaughn/homebrew-parley-tap/releases/download/parley-#{version.csv.first}-#{version.csv.second}/Parley.dmg"
   name "Parley"
